@@ -1,0 +1,1 @@
+{"go":"go1.26.4","os":"windows","arch":"amd64","cpus":8,"samples":1000,"p50_us":256.315,"p95_us":502.64,"max_us":969.99,"price":"none","measurement":"50 means of 20 in-process inventory.query permits. A single call on this Windows clock often reads 0 because it finishes inside one tick. Not a network of agents and not a pass gate."}

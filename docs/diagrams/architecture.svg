@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1320" viewBox="0 0 1200 1320" role="img" aria-labelledby="diagramTitle diagramDesc">
+<title id="diagramTitle">MCP security gateway, the enforced path</title>
+<desc id="diagramDesc">Three cedar workload identities call one in-process gateway. The gateway checks token, audience, registry, catalog, policy, and approval, then mints a 60-second delegated credential. Two MCP servers expose four tools. Project 1 commit b1294e2 is a documented contract and was not contacted. Six integration gates are not-run. Price none.</desc>
+<rect width="1200" height="1320" fill="#f4f7fb"/>
+<rect width="1200" height="108" fill="#101820"/>
+<rect y="104" width="1200" height="4" fill="#0f6e6e"/>
+<text x="28" y="36" fill="#7dcec8" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.4">SELF-DIRECTED REFERENCE</text>
+<text x="28" y="70" fill="#ffffff" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="28" font-weight="700">MCP security gateway</text>
+<text x="1172" y="42" fill="#8fe0b8" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="end">in-process lab</text>
+<text x="1172" y="66" fill="#c5d4e0" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13" text-anchor="end">SYN-TENANT-CEDAR · SYN-POL-MCP</text>
+<text x="1172" y="88" fill="#8aa0b5" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" text-anchor="end">price none</text>
+
+<rect x="30" y="132" width="1144" height="78" rx="14" fill="#d9e3ec"/>
+<rect x="28" y="128" width="1144" height="78" rx="14" fill="#ffffff" stroke="#e1e8ef"/>
+<text x="52" y="156" fill="#1e3a5f" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.1">HUMANS</text>
+<text x="52" y="182" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">ADA</text>
+<text x="108" y="182" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">SYN-USER-ADA · registry-admin</text>
+<text x="420" y="182" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">JULES</text>
+<text x="488" y="182" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">SYN-USER-JULES · requester</text>
+<text x="760" y="182" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">KIRAN</text>
+<text x="836" y="182" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">SYN-USER-KIRAN · approver</text>
+
+<rect x="30" y="230" width="368" height="196" rx="14" fill="#d9e3ec"/>
+<rect x="28" y="226" width="368" height="196" rx="14" fill="#ffffff"/>
+<rect x="28" y="226" width="368" height="40" rx="14" fill="#1e3a5f"/>
+<rect x="28" y="248" width="368" height="18" fill="#1e3a5f"/>
+<text x="48" y="252" fill="#ffffff" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="15" font-weight="700">Read-only agent</text>
+<rect x="28" y="226" width="368" height="196" rx="14" fill="none" stroke="#e1e8ef"/>
+<text x="48" y="292" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">SYN-AGENT-LANGGRAPH</text>
+<text x="48" y="316" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">langgraph · owner ADA · active</text>
+<text x="48" y="346" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">inventory.query</text>
+<text x="48" y="368" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">read · low · SYN-INV-TEST · approved</text>
+<text x="48" y="396" fill="#1e3a5f" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="600">Stand-in client. Runtime was not started.</text>
+
+<rect x="418" y="230" width="368" height="196" rx="14" fill="#d9e3ec"/>
+<rect x="416" y="226" width="368" height="196" rx="14" fill="#ffffff"/>
+<rect x="416" y="226" width="368" height="40" rx="14" fill="#0f5c6b"/>
+<rect x="416" y="248" width="368" height="18" fill="#0f5c6b"/>
+<text x="436" y="252" fill="#ffffff" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="15" font-weight="700">Maintenance agent</text>
+<rect x="416" y="226" width="368" height="196" rx="14" fill="none" stroke="#e1e8ef"/>
+<text x="436" y="292" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">SYN-AGENT-GO</text>
+<text x="436" y="316" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">go · owner JULES · active</text>
+<text x="436" y="346" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">inventory.query · maintenance.apply</text>
+<text x="436" y="368" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">apply is high risk and sensitive</text>
+<text x="436" y="396" fill="#0f5c6b" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="600">KIRAN approves. JULES cannot.</text>
+
+<rect x="806" y="230" width="368" height="196" rx="14" fill="#d9e3ec"/>
+<rect x="804" y="226" width="368" height="196" rx="14" fill="#ffffff"/>
+<rect x="804" y="226" width="368" height="40" rx="14" fill="#1d4e89"/>
+<rect x="804" y="248" width="368" height="18" fill="#1d4e89"/>
+<text x="824" y="252" fill="#ffffff" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="15" font-weight="700">Test agent</text>
+<rect x="804" y="226" width="368" height="196" rx="14" fill="none" stroke="#e1e8ef"/>
+<text x="824" y="292" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">SYN-AGENT-TESTAUTO</text>
+<text x="824" y="316" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">test-automation · owner KIRAN · active</text>
+<text x="824" y="346" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">test.ping</text>
+<text x="824" y="368" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">ping · low · SYN-TEST · approved</text>
+<text x="824" y="396" fill="#1d4e89" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="600">Third cedar identity. Demo count is 3.</text>
+
+<text x="28" y="454" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="0.8">GATEWAY CALL ORDER</text>
+<text x="196" y="454" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">A miss returns a reason, writes audit, and leaves the mock uncalled.</text>
+
+<rect x="30" y="474" width="270" height="228" rx="14" fill="#d9e3ec"/>
+<rect x="28" y="470" width="270" height="228" rx="14" fill="#ffffff"/>
+<rect x="28" y="470" width="270" height="44" rx="14" fill="#1e3a5f"/>
+<rect x="28" y="492" width="270" height="22" fill="#1e3a5f"/>
+<circle cx="52" cy="492" r="12" fill="#ffffff"/>
+<text x="52" y="496" fill="#1e3a5f" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">1</text>
+<text x="72" y="497" fill="#ffffff" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="15" font-weight="700">Token</text>
+<rect x="28" y="470" width="270" height="228" rx="14" fill="none" stroke="#e1e8ef"/>
+<text x="48" y="546" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">Ed25519 in memory</text>
+<text x="48" y="568" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12">https://syn.lab/mcp-gateway</text>
+<text x="48" y="598" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">Lab clock expiry</text>
+<text x="48" y="620" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12">2026-11-12T15:00:00Z</text>
+<text x="48" y="652" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">Delegated tokens stop</text>
+<text x="48" y="674" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12">credential_rejected</text>
+<line x1="302" y1="492" x2="310" y2="492" stroke="#8aa0b5" stroke-width="2"/>
+<path d="M310,487.5 L316,492 L310,496.5 Z" fill="#8aa0b5"/>
+
+<rect x="322" y="474" width="270" height="228" rx="14" fill="#d9e3ec"/>
+<rect x="320" y="470" width="270" height="228" rx="14" fill="#ffffff"/>
+<rect x="320" y="470" width="270" height="44" rx="14" fill="#0f5c6b"/>
+<rect x="320" y="492" width="270" height="22" fill="#0f5c6b"/>
+<circle cx="344" cy="492" r="12" fill="#ffffff"/>
+<text x="344" y="496" fill="#0f5c6b" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">2</text>
+<text x="364" y="497" fill="#ffffff" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="15" font-weight="700">Identity</text>
+<rect x="320" y="470" width="270" height="228" rx="14" fill="none" stroke="#e1e8ef"/>
+<text x="340" y="546" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">Audience is the server</text>
+<text x="340" y="568" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12">mcp:// plus the server id</text>
+<text x="340" y="598" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">Registry must be up</text>
+<text x="340" y="620" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12">Claims alone do not allow</text>
+<text x="340" y="652" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">Tenant, then status</text>
+<text x="340" y="674" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12">active, or identity_revoked</text>
+<line x1="594" y1="492" x2="602" y2="492" stroke="#8aa0b5" stroke-width="2"/>
+<path d="M602,487.5 L608,492 L602,496.5 Z" fill="#8aa0b5"/>
+
+<rect x="614" y="474" width="270" height="228" rx="14" fill="#d9e3ec"/>
+<rect x="612" y="470" width="270" height="228" rx="14" fill="#ffffff"/>
+<rect x="612" y="470" width="270" height="44" rx="14" fill="#1d4e89"/>
+<rect x="612" y="492" width="270" height="22" fill="#1d4e89"/>
+<circle cx="636" cy="492" r="12" fill="#ffffff"/>
+<text x="636" y="496" fill="#1d4e89" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">3</text>
+<text x="656" y="497" fill="#ffffff" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="15" font-weight="700">Decide</text>
+<rect x="612" y="470" width="270" height="228" rx="14" fill="none" stroke="#e1e8ef"/>
+<text x="632" y="546" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">Catalog and scope</text>
+<text x="632" y="568" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12">Resource equals the tool scope</text>
+<text x="632" y="598" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">Default deny</text>
+<text x="632" y="620" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12">mcp.agent and mcp.tool</text>
+<text x="632" y="652" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">Sensitive needs a grant</text>
+<text x="632" y="674" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12">OPA is not the grant clock</text>
+<line x1="886" y1="492" x2="894" y2="492" stroke="#8aa0b5" stroke-width="2"/>
+<path d="M894,487.5 L900,492 L894,496.5 Z" fill="#8aa0b5"/>
+
+<rect x="906" y="474" width="266" height="228" rx="14" fill="#d9e3ec"/>
+<rect x="904" y="470" width="266" height="228" rx="14" fill="#ffffff"/>
+<rect x="904" y="470" width="266" height="44" rx="14" fill="#1f7a4d"/>
+<rect x="904" y="492" width="266" height="22" fill="#1f7a4d"/>
+<circle cx="928" cy="492" r="12" fill="#ffffff"/>
+<text x="928" y="496" fill="#1f7a4d" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="700" text-anchor="middle">4</text>
+<text x="948" y="497" fill="#ffffff" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="15" font-weight="700">Forward</text>
+<rect x="904" y="470" width="266" height="228" rx="14" fill="none" stroke="#e1e8ef"/>
+<text x="924" y="546" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">New JWT, 60 seconds</text>
+<text x="924" y="568" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12">delegated · one server · one tool</text>
+<text x="924" y="598" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">Caller bearer stays here</text>
+<text x="924" y="620" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12">Minted value is a new token</text>
+<text x="924" y="652" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">Mock, then the audit</text>
+<text x="924" y="674" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12">principal, server, tool, revision</text>
+
+<text x="28" y="732" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="0.8">APPROVED SERVERS</text>
+<text x="196" y="732" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Endpoints are in-process. The mock accepts only a delegated credential for its own audience.</text>
+
+<rect x="30" y="752" width="560" height="188" rx="14" fill="#d9e3ec"/>
+<rect x="28" y="748" width="560" height="188" rx="14" fill="#ffffff" stroke="#e1e8ef"/>
+<text x="48" y="776" fill="#0f5c6b" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.1">SYN-MCP-INVENTORY</text>
+<text x="48" y="804" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">mcp://SYN-MCP-INVENTORY</text>
+<text x="48" y="828" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">inprocess://SYN-MCP-INVENTORY · owner ADA</text>
+<text x="48" y="862" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">inventory.query</text>
+<text x="200" y="862" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">read · low · SYN-INV-TEST · state present</text>
+<text x="48" y="890" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">test.ping</text>
+<text x="200" y="890" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">ping · low · SYN-TEST · pong true</text>
+
+<rect x="610" y="752" width="562" height="188" rx="14" fill="#d9e3ec"/>
+<rect x="608" y="748" width="562" height="188" rx="14" fill="#ffffff" stroke="#e1e8ef"/>
+<text x="628" y="776" fill="#9b2c2c" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.1">SYN-MCP-ADMIN</text>
+<text x="628" y="804" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="16" font-weight="700">mcp://SYN-MCP-ADMIN</text>
+<text x="628" y="828" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">inprocess://SYN-MCP-ADMIN · owner ADA</text>
+<text x="628" y="862" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">inventory.admin</text>
+<text x="780" y="862" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">high · no seed allow · denied</text>
+<text x="628" y="890" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">maintenance.apply</text>
+<text x="800" y="890" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">high · sensitive · grant 300s</text>
+
+<text x="28" y="972" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="0.8">PROJECT 1 CONTRACT</text>
+<text x="210" y="972" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Documented JSON. The lab does not import its packages and does not dial it.</text>
+
+<rect x="30" y="992" width="1144" height="112" rx="14" fill="#d9e3ec"/>
+<rect x="28" y="988" width="1144" height="112" rx="14" fill="#ffffff" stroke="#9a6700" stroke-dasharray="6 4"/>
+<text x="52" y="1018" fill="#9a6700" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1">NOT CONTACTED · b1294e2</text>
+<text x="52" y="1048" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">POST /v1/access-requests</text>
+<text x="280" y="1048" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">resource · action · reason</text>
+<text x="620" y="1048" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">GET /v1/audit/events</text>
+<text x="820" y="1048" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">GET /v1/gates</text>
+<text x="52" y="1078" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">MCP_CONTROL_PLANE_URL is unset. Project 1 was not contacted. A set value is blocked and is not copied into the reason.</text>
+
+<text x="28" y="1132" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="0.8">FAIL CLOSED</text>
+<text x="140" y="1132" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="13">Protected calls during these stops stay at zero.</text>
+
+<rect x="28" y="1148" width="368" height="64" rx="10" fill="#f4f7fc" stroke="#e3ebf2"/>
+<rect x="28" y="1160" width="4" height="40" rx="2" fill="#1d4e89"/>
+<text x="48" y="1174" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">Gateway down</text>
+<text x="48" y="1194" fill="#1d4e89" font-family="Cascadia Mono, Consolas, ui-monospace, monospace" font-size="12">gateway_unavailable</text>
+
+<rect x="416" y="1148" width="368" height="64" rx="10" fill="#f4f7fc" stroke="#e3ebf2"/>
+<rect x="416" y="1160" width="4" height="40" rx="2" fill="#1d4e89"/>
+<text x="436" y="1174" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">Registry down</text>
+<text x="436" y="1194" fill="#1d4e89" font-family="Cascadia Mono, Consolas, ui-monospace, monospace" font-size="12">registry_unavailable</text>
+
+<rect x="804" y="1148" width="368" height="64" rx="10" fill="#f4f7fc" stroke="#e3ebf2"/>
+<rect x="804" y="1160" width="4" height="40" rx="2" fill="#1d4e89"/>
+<text x="824" y="1174" fill="#102033" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="14" font-weight="700">Policy down</text>
+<text x="824" y="1194" fill="#1d4e89" font-family="Cascadia Mono, Consolas, ui-monospace, monospace" font-size="12">policy_unavailable</text>
+
+<text x="28" y="1248" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12">SYN-AGENT-BIRCH on SYN-TENANT-BIRCH is the cross-tenant stop only. The demo agent count is 3.</text>
+<text x="28" y="1270" fill="#5c6b7a" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12">Not-run gates: control-plane, OIDC, local Docker, Kubernetes, OTLP, customer deployment. Spans stay in memory.</text>
+<text x="28" y="1292" fill="#8aa0b5" font-family="Segoe UI, system-ui, Arial, sans-serif" font-size="12">Lab clock 2026-11-12T15:00:00Z. Grant TTL 300 seconds. Downstream credential 60 seconds. Caller token TTL 1 hour. Price none.</text>
+</svg>

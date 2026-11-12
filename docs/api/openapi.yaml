@@ -1,0 +1,67 @@
+openapi: 3.0.3
+info:
+  title: AI Agent and MCP Security Gateway
+  version: 0.1.0
+  description: Administrative and proxy API for the synthetic MCP lab. Every /v1 path requires a bearer token.
+paths:
+  /v1/mcp/call:
+    post:
+      summary: Authorize a tool call and forward it with a new credential
+      responses:
+        "200":
+          description: Allowed
+  /v1/access-requests:
+    post:
+      summary: Request a sensitive tool grant
+      responses:
+        "200":
+          description: Pending request
+  /v1/access-requests/{id}/approve:
+    post:
+      summary: Approve a scoped grant
+      responses:
+        "200":
+          description: Grant
+  /v1/access-requests/{id}/revoke:
+    post:
+      summary: Revoke a grant
+      responses:
+        "200":
+          description: Revoked
+  /v1/agents/{id}/revoke:
+    post:
+      summary: Revoke an agent identity
+      responses:
+        "200":
+          description: Revoked
+  /v1/tools/{id}/review:
+    post:
+      summary: Record a tool change or accept the policy review
+      responses:
+        "200":
+          description: Tool
+  /v1/audit/events:
+    get:
+      summary: Query audit records for the caller tenant
+      responses:
+        "200":
+          description: Events
+  /v1/analytics/findings:
+    get:
+      summary: Excessive permissions, denials, and changed tools
+      responses:
+        "200":
+          description: Findings
+  /v1/gates:
+    get:
+      summary: Report integrations that were not executed
+      responses:
+        "200":
+          description: Gates
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+security:
+  - bearerAuth: []

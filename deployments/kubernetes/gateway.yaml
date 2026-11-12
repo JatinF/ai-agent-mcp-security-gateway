@@ -1,0 +1,23 @@
+# kubectl is not installed. This manifest was not applied.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mcp-gateway
+  labels:
+    app: mcp-gateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mcp-gateway
+  template:
+    metadata:
+      labels:
+        app: mcp-gateway
+    spec:
+      containers:
+        - name: gateway
+          image: ai-agent-mcp-security-gateway-gateway:not-pulled-locally
+          args: ["health"]
+          ports:
+            - containerPort: 8090

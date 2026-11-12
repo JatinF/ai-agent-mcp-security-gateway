@@ -1,0 +1,25 @@
+package platform
+
+const (
+	TenantCedar     = "SYN-TENANT-CEDAR"
+	TenantBirch     = "SYN-TENANT-BIRCH"
+	UserAda         = "SYN-USER-ADA"
+	UserJules       = "SYN-USER-JULES"
+	UserKiran       = "SYN-USER-KIRAN"
+	AgentLang       = "SYN-AGENT-LANGGRAPH"
+	AgentGo         = "SYN-AGENT-GO"
+	AgentTest       = "SYN-AGENT-TESTAUTO"
+	AgentBirch      = "SYN-AGENT-BIRCH"
+	ServerInventory = "SYN-MCP-INVENTORY"
+	ServerAdmin     = "SYN-MCP-ADMIN"
+	ToolQuery       = "inventory.query"
+	ToolAdmin       = "inventory.admin"
+	ToolApply       = "maintenance.apply"
+	ToolPing        = "test.ping"
+	ResourceInv     = "SYN-INV-TEST"
+	ResourceTest    = "SYN-TEST"
+	PolicyID        = "SYN-POL-MCP"
+	RoleAdmin       = "registry-admin"
+	RoleApprover    = "approver"
+	RoleRequester   = "requester"
+)

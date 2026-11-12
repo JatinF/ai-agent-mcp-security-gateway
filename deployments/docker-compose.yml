@@ -1,0 +1,23 @@
+# Images were not pulled on the authoring workstation.
+# MCP_DOCKER is unset. A local compose up was not run.
+services:
+  gateway:
+    image: ai-agent-mcp-security-gateway-gateway:not-pulled-locally
+    command: ["health"]
+    ports:
+      - "127.0.0.1:8090:8090"
+  registry:
+    image: ai-agent-mcp-security-gateway-registry:not-pulled-locally
+    command: ["health"]
+    ports:
+      - "127.0.0.1:8091:8091"
+  approval-service:
+    image: ai-agent-mcp-security-gateway-approval:not-pulled-locally
+    command: ["health"]
+    ports:
+      - "127.0.0.1:8092:8092"
+  audit-collector:
+    image: ai-agent-mcp-security-gateway-audit:not-pulled-locally
+    command: ["health"]
+    ports:
+      - "127.0.0.1:8093:8093"
